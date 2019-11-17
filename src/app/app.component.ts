@@ -24,7 +24,7 @@ const TREE_DATA: CourseNode[] = [
     ]
   },
   {
-    name: 'Topics',
+    name: 'Other',
     children: [
       {name: 'Artificial Intelligence'},
       {name: 'Linear Algebra'},
