@@ -20,6 +20,54 @@ p {
     margin: 0;
 }
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-250px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUpFadeIn {
+    0% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes tabControlFadeIn {
+    0% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .header {
     height: 250px;
     display: flex;
@@ -28,6 +76,8 @@ p {
     font-weight: 600;
     align-items: center;
     justify-content: space-evenly;
+
+    animation: 1s ease-out 0s 1 slideDown;
 }
 
 .info-wrapper {
@@ -42,11 +92,20 @@ p {
     overflow: hidden;
     display: flex;
     margin: 0px 20px;
+
+    
+    animation: 2s linear 0s 1 fadeIn;
 }
 
 .header-detail {
     height: 175px;
     vertical-align: top;
+
+    animation: 2s linear 0s 1 fadeIn;
+}
+
+.link-menu {
+    animation: 2s ease-out 0s 1 slideUpFadeIn;
 }
 
 .social-link {
@@ -95,6 +154,10 @@ p {
     color: #333;
 }
 
+.fa-envelope {
+    color: #4527A0;
+}
+
 .content {
     display: flex;
     justify-content: center;
@@ -103,6 +166,8 @@ p {
 .tab-group {
     margin: 8px;
     width: 800px;
+
+    animation: 2s linear 0s 1 tabControlFadeIn;
 }
 
 .tab-content {
