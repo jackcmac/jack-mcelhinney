@@ -117,9 +117,21 @@ p {
     margin-bottom: 12px;
 }
 
-.tree-view-split {
+.coursework {
+    margin-top: 12px;
+}
+
+.split-card {
     display: flex;
     justify-content: space-evenly;
+}
+
+::ng-deep .mat-list-item-content {
+    justify-content: center;
+}
+
+.skill-classification {
+    text-align: center;
 }
 
 //   .spacer {
