@@ -20,3 +20,15 @@ steps:
     npm install
     ng build --prod
   displayName: 'npm install and build'
+- task: Npm@1
+  inputs:
+    command: 'install'
+    workingDir: 'dist/'
+  displayName: 'npm install in the dist folder for express'
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Pay-As-You-Go(8a193288-7b5a-4c37-8040-2bb3fca3c1bf)'
+    appType: 'webApp'
+    WebAppName: 'jack-mcelhinney-web-app'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
