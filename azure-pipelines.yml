@@ -31,4 +31,3 @@ steps:
     azureSubscription: 'Pay-As-You-Go(8a193288-7b5a-4c37-8040-2bb3fca3c1bf)'
     appType: 'webApp'
     WebAppName: 'jack-mcelhinney-web-app'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
