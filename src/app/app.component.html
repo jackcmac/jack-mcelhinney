@@ -181,8 +181,34 @@
       <div class="tab-content">
         <mat-card class="tab-card project-card">
           <mat-card-header>
+            <mat-card-title>CUHackit FindYourWayWith.Tech</mat-card-title>
+            <mat-card-subtitle>January 2020</mat-card-subtitle>
+            <img mat-card-avatar src="assets/images/cuhackit_logo.jpg">
+          </mat-card-header>
+          <mat-card-content>
+            <p>
+             Finding classrooms in unfamiliar buildings can be a stressful part of starting a new semester. This process is even
+             more stressful and time-consuming for those with visual impairments. For CUhackit 2020, we set out to make an easy to use,
+             voice-enabled navigation system for locating classrooms.<br><br>
+             Users of our system can simply ask Siri "Help me find my classroom." Our system will then read out all available rooms 
+             and allow the user to choose. Our system will then access the user's location and provide them with relative directions 
+             with a number of steps to take in each direction, scaled to their personal height.<br><br>
+             FindYourWayWith.Tech was made using iOS Shortcuts and Google Cloud. iOS Shortcuts was used for setting up the Siri 
+             integration, getting location information, accessing health data to get the user's height, 
+             and issuing the request to Google Cloud. In two Google Cloud Python Functions, we used Vincenty's Formula to 
+             calculate distances between points and Dijkstra's algorithm to find the shortest path. We then returned an 
+             accurate list of directions to the user to help them on their way. 
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+              <a mat-button href="https://github.com/jackcmac/cuhackit-2020" target="_blank">GitHub Source</a>
+              <a mat-button href="https://devpost.com/software/find-your-way-with-tech" target="_blank">Devpost</a>
+          </mat-card-actions>
+        </mat-card>
+        <mat-card class="tab-card project-card">
+          <mat-card-header>
             <mat-card-title>Senior Capstone Project</mat-card-title>
-            <mat-card-subtitle>August 2019 - Current</mat-card-subtitle>
+            <mat-card-subtitle>August 2019 - December 2019</mat-card-subtitle>
             <img mat-card-avatar src="assets/images/synnex_logo.jpg">                  
           </mat-card-header>
           <mat-card-content>
