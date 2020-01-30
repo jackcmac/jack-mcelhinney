@@ -12,15 +12,16 @@ const TREE_DATA: CourseNode[] = [
     name: 'Algorithms',
     children: [
       {name: 'Design and Analysis of Algorithms'},
+      {name: 'Applied Data Science'},
       {name: 'Algorithms and Data Structures'}
     ]
   },
   {
     name: 'Software Development',
     children: [
+      {name: 'Cloud Computing Architecture'},
       {name: 'Human and Computer Interaction'},
       {name: 'Software Engineering'},
-      {name: 'Software Development Foundations'},
     ]
   },
   {
